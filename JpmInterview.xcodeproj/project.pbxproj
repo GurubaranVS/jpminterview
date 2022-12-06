@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		CABA5F54293ECDBB008A73E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F53293ECDBB008A73E5 /* AppDelegate.swift */; };
 		CABA5F56293ECDBB008A73E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F55293ECDBB008A73E5 /* SceneDelegate.swift */; };
-		CABA5F58293ECDBB008A73E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F57293ECDBB008A73E5 /* ViewController.swift */; };
+		CABA5F58293ECDBB008A73E5 /* SchoolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F57293ECDBB008A73E5 /* SchoolsListViewController.swift */; };
 		CABA5F5B293ECDBB008A73E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABA5F59293ECDBB008A73E5 /* Main.storyboard */; };
 		CABA5F5D293ECDBD008A73E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABA5F5C293ECDBD008A73E5 /* Assets.xcassets */; };
 		CABA5F60293ECDBD008A73E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABA5F5E293ECDBD008A73E5 /* LaunchScreen.storyboard */; };
 		CABA5F6B293ECDBD008A73E5 /* JpmInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F6A293ECDBD008A73E5 /* JpmInterviewTests.swift */; };
 		CABA5F75293ECDBD008A73E5 /* JpmInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F74293ECDBD008A73E5 /* JpmInterviewUITests.swift */; };
 		CABA5F77293ECDBD008A73E5 /* JpmInterviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F76293ECDBD008A73E5 /* JpmInterviewUITestsLaunchTests.swift */; };
+		CABA5F86293ED798008A73E5 /* SchoolsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F85293ED798008A73E5 /* SchoolsList.swift */; };
+		CABA5F89293ED9CF008A73E5 /* SchoolsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F88293ED9CF008A73E5 /* SchoolsListTableViewCell.swift */; };
+		CABA5F8B293EE0DB008A73E5 /* SchoolsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F8A293EE0DB008A73E5 /* SchoolsListService.swift */; };
+		CABA5F8E293EECEB008A73E5 /* SchoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F8D293EECEB008A73E5 /* SchoolListViewModel.swift */; };
+		CABA5F90293F1173008A73E5 /* SATScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F8F293F1173008A73E5 /* SATScoreViewModel.swift */; };
+		CABA5F92293F118A008A73E5 /* SATScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F91293F118A008A73E5 /* SATScoreService.swift */; };
+		CABA5F94293F11B2008A73E5 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F93293F11B2008A73E5 /* ServiceError.swift */; };
+		CABA5F96293F11F8008A73E5 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F95293F11F7008A73E5 /* HTTPURLResponse.swift */; };
+		CABA5F98293F121B008A73E5 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F97293F121B008A73E5 /* URLRequest.swift */; };
+		CABA5F9A293F1242008A73E5 /* SATScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F99293F1242008A73E5 /* SATScore.swift */; };
+		CABA5F9D293F1A35008A73E5 /* SATScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA5F9C293F1A35008A73E5 /* SATScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,7 @@
 		CABA5F50293ECDBB008A73E5 /* JpmInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JpmInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABA5F53293ECDBB008A73E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABA5F55293ECDBB008A73E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CABA5F57293ECDBB008A73E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CABA5F57293ECDBB008A73E5 /* SchoolsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListViewController.swift; sourceTree = "<group>"; };
 		CABA5F5A293ECDBB008A73E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CABA5F5C293ECDBD008A73E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CABA5F5F293ECDBD008A73E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		CABA5F70293ECDBD008A73E5 /* JpmInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JpmInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABA5F74293ECDBD008A73E5 /* JpmInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JpmInterviewUITests.swift; sourceTree = "<group>"; };
 		CABA5F76293ECDBD008A73E5 /* JpmInterviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JpmInterviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CABA5F85293ED798008A73E5 /* SchoolsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsList.swift; sourceTree = "<group>"; };
+		CABA5F88293ED9CF008A73E5 /* SchoolsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListTableViewCell.swift; sourceTree = "<group>"; };
+		CABA5F8A293EE0DB008A73E5 /* SchoolsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListService.swift; sourceTree = "<group>"; };
+		CABA5F8D293EECEB008A73E5 /* SchoolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewModel.swift; sourceTree = "<group>"; };
+		CABA5F8F293F1173008A73E5 /* SATScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreViewModel.swift; sourceTree = "<group>"; };
+		CABA5F91293F118A008A73E5 /* SATScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreService.swift; sourceTree = "<group>"; };
+		CABA5F93293F11B2008A73E5 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		CABA5F95293F11F7008A73E5 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		CABA5F97293F121B008A73E5 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		CABA5F99293F1242008A73E5 /* SATScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScore.swift; sourceTree = "<group>"; };
+		CABA5F9C293F1A35008A73E5 /* SATScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +101,10 @@
 		CABA5F47293ECDBB008A73E5 = {
 			isa = PBXGroup;
 			children = (
+				CABA5F8C293EECCC008A73E5 /* ViewModel */,
 				CABA5F52293ECDBB008A73E5 /* JpmInterview */,
+				CABA5F87293ED98B008A73E5 /* Views */,
+				CABA5F83293ED6DA008A73E5 /* NetworkingService */,
 				CABA5F69293ECDBD008A73E5 /* JpmInterviewTests */,
 				CABA5F73293ECDBD008A73E5 /* JpmInterviewUITests */,
 				CABA5F51293ECDBB008A73E5 /* Products */,
@@ -101,10 +126,7 @@
 			children = (
 				CABA5F53293ECDBB008A73E5 /* AppDelegate.swift */,
 				CABA5F55293ECDBB008A73E5 /* SceneDelegate.swift */,
-				CABA5F57293ECDBB008A73E5 /* ViewController.swift */,
-				CABA5F59293ECDBB008A73E5 /* Main.storyboard */,
 				CABA5F5C293ECDBD008A73E5 /* Assets.xcassets */,
-				CABA5F5E293ECDBD008A73E5 /* LaunchScreen.storyboard */,
 				CABA5F61293ECDBD008A73E5 /* Info.plist */,
 			);
 			path = JpmInterview;
@@ -125,6 +147,57 @@
 				CABA5F76293ECDBD008A73E5 /* JpmInterviewUITestsLaunchTests.swift */,
 			);
 			path = JpmInterviewUITests;
+			sourceTree = "<group>";
+		};
+		CABA5F83293ED6DA008A73E5 /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				CABA5F8A293EE0DB008A73E5 /* SchoolsListService.swift */,
+				CABA5F95293F11F7008A73E5 /* HTTPURLResponse.swift */,
+				CABA5F97293F121B008A73E5 /* URLRequest.swift */,
+				CABA5F93293F11B2008A73E5 /* ServiceError.swift */,
+				CABA5F91293F118A008A73E5 /* SATScoreService.swift */,
+				CABA5F84293ED6F3008A73E5 /* Model */,
+			);
+			path = NetworkingService;
+			sourceTree = "<group>";
+		};
+		CABA5F84293ED6F3008A73E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CABA5F85293ED798008A73E5 /* SchoolsList.swift */,
+				CABA5F99293F1242008A73E5 /* SATScore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CABA5F87293ED98B008A73E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CABA5F9B293F1A25008A73E5 /* New Group */,
+				CABA5F57293ECDBB008A73E5 /* SchoolsListViewController.swift */,
+				CABA5F59293ECDBB008A73E5 /* Main.storyboard */,
+				CABA5F5E293ECDBD008A73E5 /* LaunchScreen.storyboard */,
+				CABA5F88293ED9CF008A73E5 /* SchoolsListTableViewCell.swift */,
+				CABA5F9C293F1A35008A73E5 /* SATScoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CABA5F8C293EECCC008A73E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CABA5F8D293EECEB008A73E5 /* SchoolListViewModel.swift */,
+				CABA5F8F293F1173008A73E5 /* SATScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CABA5F9B293F1A25008A73E5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +331,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CABA5F58293ECDBB008A73E5 /* ViewController.swift in Sources */,
+				CABA5F94293F11B2008A73E5 /* ServiceError.swift in Sources */,
+				CABA5F92293F118A008A73E5 /* SATScoreService.swift in Sources */,
+				CABA5F58293ECDBB008A73E5 /* SchoolsListViewController.swift in Sources */,
+				CABA5F98293F121B008A73E5 /* URLRequest.swift in Sources */,
+				CABA5F8B293EE0DB008A73E5 /* SchoolsListService.swift in Sources */,
+				CABA5F96293F11F8008A73E5 /* HTTPURLResponse.swift in Sources */,
+				CABA5F90293F1173008A73E5 /* SATScoreViewModel.swift in Sources */,
+				CABA5F8E293EECEB008A73E5 /* SchoolListViewModel.swift in Sources */,
+				CABA5F9D293F1A35008A73E5 /* SATScoreView.swift in Sources */,
+				CABA5F89293ED9CF008A73E5 /* SchoolsListTableViewCell.swift in Sources */,
 				CABA5F54293ECDBB008A73E5 /* AppDelegate.swift in Sources */,
+				CABA5F9A293F1242008A73E5 /* SATScore.swift in Sources */,
 				CABA5F56293ECDBB008A73E5 /* SceneDelegate.swift in Sources */,
+				CABA5F86293ED798008A73E5 /* SchoolsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

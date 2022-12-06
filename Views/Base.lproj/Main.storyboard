@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C0I-b0-Ls0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QkW-MG-SqE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C0I-b0-Ls0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2h5-RD-FoN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cmC-ty-iWG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lT-Sh-VWk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176.33587786259542" y="4.9295774647887329"/>
+        </scene>
+        <!--NY Schools List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SchoolsListViewController" customModule="JpmInterview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-wg-j0C">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SchoolCell" rowHeight="60" id="WTH-9n-sc0" customClass="SchoolsListTableViewCell" customModule="JpmInterview">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTH-9n-sc0" id="C8W-UR-MdY">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="School Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgb-0b-E6u">
+                                                    <rect key="frame" x="15" y="19" width="267" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1YB-d1-Lfs" userLabel="IndicatorView">
+                                                    <rect key="frame" x="186.66666666666666" y="20" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="fgb-0b-E6u" secondAttribute="bottom" constant="19.5" id="IfY-b3-nZr"/>
+                                                <constraint firstItem="fgb-0b-E6u" firstAttribute="leading" secondItem="C8W-UR-MdY" secondAttribute="leading" constant="15" id="Ky6-VI-TYn"/>
+                                                <constraint firstItem="1YB-d1-Lfs" firstAttribute="centerX" secondItem="C8W-UR-MdY" secondAttribute="centerXWithinMargins" id="OfM-hM-3ML"/>
+                                                <constraint firstItem="fgb-0b-E6u" firstAttribute="top" secondItem="C8W-UR-MdY" secondAttribute="top" constant="19" id="ZwE-Zu-3QG"/>
+                                                <constraint firstItem="1YB-d1-Lfs" firstAttribute="centerY" secondItem="C8W-UR-MdY" secondAttribute="centerY" id="dSa-6u-94H"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="indicatorView" destination="1YB-d1-Lfs" id="LxV-7e-gGi"/>
+                                            <outlet property="schoolName" destination="fgb-0b-E6u" id="Yrj-g4-qHb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jtn-TS-OrF" userLabel="IndicatorView">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jtn-TS-OrF" firstAttribute="centerX" secondItem="qdd-wg-j0C" secondAttribute="centerX" id="EeG-eR-8kO"/>
+                            <constraint firstItem="qdd-wg-j0C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G95-lP-RkY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qdd-wg-j0C" secondAttribute="trailing" id="HUs-2B-kkJ"/>
+                            <constraint firstItem="qdd-wg-j0C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RdN-iA-7nR"/>
+                            <constraint firstItem="qdd-wg-j0C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VDT-Am-E5A"/>
+                            <constraint firstItem="jtn-TS-OrF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rze-bR-Z8P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NY Schools List" id="DxF-Fe-4kn"/>
+                    <connections>
+                        <outlet property="indicatorView" destination="jtn-TS-OrF" id="56U-g3-GpF"/>
+                        <outlet property="schoolsTable" destination="qdd-wg-j0C" id="Fgk-QK-iDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.38167938931292" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
